@@ -41,7 +41,7 @@ public class Automovil{
         this.velocidadActual = velocidadActual;
     }
 
-    
+
     void acelerar (int incrementar){
         if ((velocidadActual + incrementar) < velocidadMaxima) {
             velocidadActual = velocidadActual + incrementar;
@@ -70,7 +70,6 @@ public class Automovil{
 
         return  (distancia/velocidadActual);
 
-
     }
 
     void mostrar (){
@@ -93,7 +92,7 @@ public class Automovil{
         Automovil auto1 = new Automovil("TOYOTA", 2023, 280, tipoCom.DIESEL, tipoAuto.CIUDAD);
         auto1.mostrar();
         auto1.setVelocidadActual(100);
-        
+
         System.out.println("Velocidad actual = " +auto1.velocidadActual);
         auto1.acelerar(20);
 
